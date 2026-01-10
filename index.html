@@ -24,24 +24,34 @@
       padding: 40px 20px;
     }
 
-h1 {
-  font-size: 2.8em;
-  margin-bottom: 0.2em;
-  text-align: center;
-  letter-spacing: 0.06em;
-  font-weight: 800;
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 0.2em;
+      text-align: center;
+      letter-spacing: 0.08em;
+      font-weight: 700;
 
-  color: transparent;
-  -webkit-text-stroke: 2px #4FA3FF; /* TNG-style blue outline */
-  text-stroke: 2px #4FA3FF;
+      color: transparent;
+      -webkit-text-stroke: 1px #4FA3FF; /* thin TNG blue outline */
+      text-stroke: 1px #4FA3FF;
 
-  /* Fallback for browsers that don’t support text-stroke */
-  text-shadow:
-    1px 1px 0 #4FA3FF,
-    -1px 1px 0 #4FA3FF,
-    1px -1px 0 #4FA3FF,
-    -1px -1px 0 #4FA3FF;
-}
+      /* soft sci-fi glow */
+      text-shadow:
+        0 0 4px rgba(79, 163, 255, 0.6),
+        0 0 10px rgba(79, 163, 255, 0.35);
+
+      /* subtle opacity pulse */
+      animation: warpPulse 4.5s ease-in-out infinite;
+    }
+
+    @keyframes warpPulse {
+      0%, 100% {
+        opacity: 0.85;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
 
     .tagline {
       color: #b0b0c0;
@@ -91,16 +101,16 @@ h1 {
       and keeps the tension.
     </p>
 
-<h2>Game Modes &amp; Features</h2>
-<ul>
-  <li><strong>Main Mission</strong> — Endless space survival</li>
-  <li><strong>Battle Practice</strong> — Learn the systems without risking a run</li>
-  <li><strong>Local &amp; Global High Scores</strong> — Compete via Game Center</li>
-  <li>Designed for seconds-long play sessions</li>
-  <li>Watch-only, one-handed gameplay</li>
-  <li><strong>No ads, no subscriptions, no micro-transactions</strong></li>
-  <li>Free updates</li>
-</ul>
+    <h2>Game Modes &amp; Features</h2>
+    <ul>
+      <li><strong>Main Mission</strong> — Endless space survival</li>
+      <li><strong>Battle Practice</strong> — Learn the systems without risking a run</li>
+      <li><strong>Local &amp; Global High Scores</strong> — Compete via Game Center</li>
+      <li>Designed for seconds-long play sessions</li>
+      <li>Watch-only, one-handed gameplay</li>
+      <li><strong>No ads, no subscriptions, no micro-transactions</strong></li>
+      <li>Free updates</li>
+    </ul>
 
     <h2>Availability</h2>
     <p>
